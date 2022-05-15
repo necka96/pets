@@ -19,7 +19,10 @@ const selectElement = (selector) => {
 // preloader
 
 window.onload = function () {
-  document.getElementById("preloader").classList.add("opacity-0", "invisible");
+  document.getElementById("preloader").classList.add("opacity-0", "invisibl");
+  setTimeout(() => {
+    document.getElementById("preloader").classList.add("hidden");
+  }, 1000);
 };
 
 // toggle menu
