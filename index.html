@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.png.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal</title>
+    <script
+      src="https://kit.fontawesome.com/5a22037d29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="max-w-[2000px] mx-auto text-[#023c5a] bg-white">
+    <div
+      class="flex flex-col md:flex-row text-center justify-evenly items-center w-full bg-sky-600 p-2"
+      id="top"
+    >
+      <div class="text-white">
+        <a
+          href="/"
+          class="mx-2 hover:text-[#023c5a] transition-colors duration-500"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="/"
+          class="mx-2 hover:text-[#023c5a] transition-colors duration-500"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="/"
+          class="mx-2 hover:text-[#023c5a] transition-colors duration-500"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="/"
+          class="mx-2 hover:text-[#023c5a] transition-colors duration-500"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="text-white grid grid-cols-2 gap-4">
+        <div class="flex items-center">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="ml-2">78/A, Green lane, NYC</p>
+        </div>
+        <div class="flex items-center">
+          <i class="fa-solid fa-phone"></i>
+          <p class="ml-2">+10 (78) 367 3674</p>
+        </div>
+      </div>
+    </div>
+    <nav
+      id="nav"
+      class="sticky w-full top-0 left-0 z-50 px-5 py-2 lg:bg-[#effafd] justify-between bg-white transition-all duration-500"
+    >
+      <div
+        class="w-full max-w-[1200px] mx-auto flex items-center justify-between"
+      >
+        <div><img src="./img/logo.png" alt="logo" /></div>
+        <div
+          class="lg:hidden text-3xl cursor-pointer"
+          aria-expanded="false"
+          aria-label="menu"
+          id="icon"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          role="menubar"
+          class="flex lg:flex-row flex-col items-center text-xl lg:static absolute right-0 top-14 left-0 bg-white font-extrabold lg:bg-transparent -translate-x-full lg:translate-x-0 transition-transform duration-700 shadow-md lg:shadow-none"
+        >
+          <a
+            href="/"
+            class="mx-4 my-4 lg:my-0 cursor-pointer hover:text-[#ff3e7e] transition-colors"
+            role="menuitem"
+            >Home</a
+          >
+          <a
+            href="/"
+            class="mx-4 my-4 lg:my-0 cursor-pointer hover:text-[#ff3e7e] transition-colors"
+            role="menuitem"
+            >Sevices</a
+          >
+          <a
+            href="/"
+            class="mx-4 my-4 lg:my-0 cursor-pointer hover:text-[#ff3e7e] transition-colors"
+            role="menuitem"
+            >About</a
+          >
+          <a
+            href="/"
+            class="mx-4 my-4 lg:my-0 cursor-pointer hover:text-[#ff3e7e] transition-colors"
+            role="menuitem"
+            >Blog</a
+          >
+          <a
+            href="/"
+            class="mx-4 my-4 lg:my-0 cursor-pointer hover:text-[#ff3e7e] transition-colors"
+            role="menuitem"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="bg-dog w-full h-screen bg-cover">
+        <div class="md:w-3/4 flex flex-col p-10 mx-auto">
+          <div>
+            <h1 class="md:w-3/4 uppercase text-6xl font-extrabold">
+              Saving Animals Changing Live
+            </h1>
+            <p class="my-10">
+              Far far away, behind the word mountains, far from the countries
+              vokalia.
+            </p>
+            <a
+              href="/"
+              class="bg-[#ff3e7e] px-8 py-3 text-2xl rounded-3xl text-white hover:bg-[#023c5a] transition-colors duration-700"
+              >Our Services</a
+            >
+          </div>
+          <div
+            class="mt-8 bg-white flex items-center p-3 rounded-lg md:w-3/6 shadow-md"
+          >
+            <div>
+              <img
+                class="object-cover"
+                src="./img/header-img.webp"
+                alt="header-img"
+              />
+            </div>
+            <p class="mx-2 lg:mx-10">The Kind of Care Your Pets Deserve</p>
+            <div>
+              <a href="/" class="animate-pulse"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="fixed hidden bottom-20 right-4 lg:right-12 text-4xl z-40 bg-white rounded-[50%] w-12 h-12 justify-center items-center shadow-md animate-bounce cursor-pointer"
+      id="to-top"
+    >
+      <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <main class="w-full">
+      <section class="p-5 w-full max-w-[1200px] mx-auto">
+        <h2 class="text-center my-10 text-4xl font-extrabold">
+          Our Pet Care Services
+        </h2>
+        <div
+          id="services-slide"
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          class="keen-slider w-ful"
+        >
+          <div
+            class="keen-slider__slide h-[410px] number-slide1 cursor-pointer"
+          >
+            <div class="relative">
+              <img src="./img/services1.jpg.webp" alt="" />
+              <div
+                class="bg-white absolute -bottom-16 left-0 right-0 mx-auto pt-8 pb-6 pl-7 pr-4 overflow-hidden w-4/5 rounded-lg shadow-md"
+              >
+                <h3 class="text-2xl font-extrabold my-1">
+                  <a href="/">Pet Treatment</a>
+                </h3>
+                <p class="text-lg">
+                  Far far away, behind the word mountains, far.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="keen-slider__slide h-[410px] number-slide1 cursor-pointer"
+          >
+            <div class="relative">
+              <img src="./img/services2.jpg.webp" alt="" />
+              <div
+                class="bg-white absolute -bottom-16 left-0 right-0 mx-auto pt-8 pb-6 pl-7 pr-4 overflow-hidden w-4/5 rounded-lg shadow-md"
+              >
+                <h3 class="text-2xl font-extrabold my-1">
+                  <a href="/">Pet Treatment</a>
+                </h3>
+                <p class="text-lg">
+                  Far far away, behind the word mountains, far.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="keen-slider__slide h-[410px] number-slide1 cursor-pointer"
+          >
+            <div class="relative">
+              <img src="./img/services3.jpg.webp" alt="" />
+              <div
+                class="bg-white absolute -bottom-16 left-0 right-0 mx-auto pt-8 pb-6 pl-7 pr-4 overflow-hidden w-4/5 rounded-lg shadow-md"
+              >
+                <h3 class="text-2xl font-extrabold my-1">
+                  <a href="/">Pet Treatment</a>
+                </h3>
+                <p class="text-lg">
+                  Far far away, behind the word mountains, far.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 max-w-[1200px] mx-auto">
+        <div
+          class="grid md:grid-cols-2 gap-8 mt-10"
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <div>
+            <div class="relative">
+              <img src="./img/about1.jpg.webp" alt="" />
+              <div
+                id="play"
+                class="absolute bottom-10 left-6 text-xl bg-white rounded-[50%] w-12 h-12 flex justify-center items-center shadow-md animate-bounce cursor-pointer"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div
+              class="fixed scale-0 opacity-0 left-0 top-0 z-50 w-full h-screen transition-all"
+              id="video"
+            >
+              <iframe
+                class="w-[90%] max-w-[1000px] m-auto translate-y-2/4 object-cover h-1/2"
+                src="https://www.youtube.com/embed/2vRsEC65NTA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                id="frame"
+              ></iframe>
+              <div
+                id="close-video"
+                class="absolute top-20 right-6 text-3xl cursor-pointer"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="my-10 text-4xl font-extrabold">
+              Animals has come to mean so much in t live
+            </h2>
+            <p class="text-lg mb-10">
+              Far far away, behind the word mountains, far from the countries
+              vokalia. Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolo
+              indd re voluptate velit esscillumlore eu quife nrulla parihatur.
+              Excghcepteur sfwsignjnt occa cupidatat non more than aute.
+            </p>
+            <a
+              href="/"
+              class="bg-[#ff3e7e] px-8 py-3 text-2xl rounded-3xl text-white hover:bg-[#023c5a] transition-colors duration-700"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="p-5 my-10 bg-dogTwo w-full bg-cover">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          class="p-12 md:m-10 bg-white w-full max-w-[400px] rounded-lg shadow-lg"
+        >
+          <img src="./img/emargency.svg" class="object-cover" alt="emargency" />
+          <h2 class="my-8 text-4xl font-extrabold">
+            For Emergency care Just Call Us
+          </h2>
+          <p class="text-lg mb-4">Mon - Fri (9.00-6.00)</p>
+          <p class="text-lg mb-10">Sat - Sun (2.30-7.00)</p>
+          <a
+            href="/"
+            class="bg-[#ff3e7e] px-8 py-3 text-xl rounded-3xl text-white hover:bg-[#023c5a] transition-colors duration-700"
+            >+10 (89) 837 3678</a
+          >
+        </div>
+      </section>
+      <section class="md:p-5 my-10 xl:bg-dogThree bg-no-repeat bg-contain">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="testemonial"
+          class="keen-slider w-full max-w-[1200px] mx-auto"
+        >
+          <div
+            class="keen-slider__slide number-slide1 cursor-pointer h-[410px] flex flex-col items-center gap-5 text-center"
+          >
+            <img src="./img/testimonial.png.webp" alt="testemonial" />
+            <p class="lg:text-3xl w-[70%] font-extrabold">
+              "A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth."
+            </p>
+            <div>
+              <span class="text-sky-500 text-lg lg:text-2xl">Pete Sariya</span>
+              <p>Happy dog owner</p>
+            </div>
+          </div>
+          <div
+            class="keen-slider__slide number-slide1 cursor-pointer h-[410px] flex flex-col items-center gap-5 text-center"
+          >
+            <img src="./img/testimonial.png.webp" alt="testemonial" />
+            <p class="lg:text-3xl w-[70%] font-extrabold">
+              "A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth."
+            </p>
+            <div>
+              <span class="text-sky-500 text-lg lg:text-2xl">Pete Sariya</span>
+              <p>Happy dog owner</p>
+            </div>
+          </div>
+          <div
+            class="keen-slider__slide number-slide1 cursor-pointer h-[410px] flex flex-col items-center gap-5 text-center"
+          >
+            <img src="./img/testimonial.png.webp" alt="testemonial" />
+            <p class="lg:text-3xl w-[70%] font-extrabold">
+              "A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth."
+            </p>
+            <div>
+              <span class="text-sky-500 text-lg lg:text-2xl">Pete Sariya</span>
+              <p>Happy dog owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="p-5 lg:p-20 my-10 bg-dotanionSec bg-no-repeat bg-cover bg-center"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-offset="50"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          class="flex flex-col items-center gap-5 p-5 text-center text-white w-full max-w-[1200px] mx-auto"
+        >
+          <h2 class="lg:text-4xl font-extrabold text-2xl">
+            We looking for helping hand Far far away, behind the word mountains,
+            far from the countries vokalia. Dvcuis
+          </h2>
+          <p class="text-lg">
+            Far far away, behind the word mountains, far from the countries
+            vokalia. Dvcuis aute serunt iruxvfg dhjkolohr indd re voluptate
+          </p>
+          <div class="grid grid-cols-2 gap-2">
+            <a
+              href="/"
+              class="bg-transparent border-2 border-white hover:text-[#023c5a] lg:px-8 lg:py-3 px-4 py-1 flex items-center justify-center rounded-3xl text-white hover:bg-white transition-colors duration-700"
+              >Learn More</a
+            >
+            <a
+              href="/"
+              class="bg-[#ff3e7e] lg:px-8 lg:py-3 px-4 py-1 flex items-center justify-center rounded-3xl text-white hover:bg-[#023c5a] transition-colors duration-700"
+              >Make a donation</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        data-aos-delay="60"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-8 p-9 w-full max-w-[1200px] mx-auto"
+      >
+        <div class="mt-2">
+          <img src="./img/logo.png" alt="logo" />
+          <p class="text-lg my-4">
+            Seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Conse ctetur pisicin elit, sed do eiusmod tempor.
+          </p>
+          <div class="text-2xl">
+            <a href="/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="/" class="mx-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="/" class="mr-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-extrabold my-3">Navigation</h3>
+          <div class="inline-flex flex-col text-xl">
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Home</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >About</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Sevices</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Blog</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Conctact</a
+            >
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-extrabold my-3">Services</h3>
+          <div class="inline-flex flex-col text-xl">
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Pet Care</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Pet Treatment</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Pet Trainingl</a
+            >
+            <a
+              href="/"
+              class="mb-1 hover:underline hover:underline-offset-1 transition-all duration-1000"
+              >Hygienic Care</a
+            >
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-extrabold my-3">Subscribe newsletter</h3>
+          <p class="text-lg my-4">
+            Subscribe our newsletter to get updates about our services and
+            offers.
+          </p>
+          <form>
+            <div class="relative flex items-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="border-2 border-[#023c5a] p-2 rounded-3xl w-full focus:outline-none"
+              />
+              <a href="/" class="absolute right-4" role="button"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center my-2">
+        <p class="text-lg">
+          Copyright © <span id="date"></span> All rights reserved | This
+          template is made with <span class="text-[#ff3e7e]"> &hearts; </span>
+          by
+          <a href="/" class="font-extrabold">Nemanja Djordjevic</a>
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
