@@ -2,4 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
+  .loaded {
+    animation: disppear 0.5s forwards;
+  }
+  @keyframes disppear {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 }

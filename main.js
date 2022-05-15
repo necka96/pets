@@ -157,7 +157,7 @@ AOS.init();
 // preloader
 
 const preloader = selectElement("#preloader");
-
+console.log(preloader);
 window.addEventListener("load", () => {
   preloader.classList.add("animate-customAnimate");
 });
