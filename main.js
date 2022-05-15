@@ -18,11 +18,9 @@ const selectElement = (selector) => {
 
 // preloader
 
-const preloader = selectElement("#preloader");
-window.addEventListener("load", () => {
-  preloader.classList.add("animate-customAnimate");
-  console.log(preloader);
-});
+window.onload = function () {
+  document.getElementById("preloader").className = "animate-customAnimate";
+};
 
 // toggle menu
 
