@@ -14,7 +14,7 @@ module.exports = {
         },
       },
       animation: {
-        customAnimate: "customAnimate 1s ease-in-out forwards",
+        customAnimate: "customAnimate 1s  forwards",
       },
     },
   },

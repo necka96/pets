@@ -19,7 +19,7 @@ const selectElement = (selector) => {
 // preloader
 
 window.onload = function () {
-  document.getElementById("preloader").className = "animate-customAnimate";
+  document.getElementById("preloader").classList.add("opacity-0", "invisible");
 };
 
 // toggle menu
