@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
 import "./style.css";
+
 // element selector
 
 const selectElement = (selector) => {
@@ -14,6 +15,14 @@ const selectElement = (selector) => {
   }
   throw new Error(`Uverite se da li ovaj ${selector} postoji`);
 };
+
+// preloader
+
+const preloader = selectElement("#preloader");
+window.addEventListener("load", () => {
+  preloader.classList.add("animate-customAnimate");
+  console.log(preloader);
+});
 
 // toggle menu
 
@@ -153,11 +162,3 @@ const date = (selectElement("#date").innerText = new Date().getFullYear());
 
 // scroll animation
 AOS.init();
-
-// preloader
-
-const preloader = selectElement("#preloader");
-console.log(preloader);
-window.addEventListener("load", () => {
-  preloader.classList.add("loaded");
-});
