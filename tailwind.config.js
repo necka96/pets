@@ -8,6 +8,14 @@ module.exports = {
         dogThree: "url('./img/dog3.png')",
         dotanionSec: "url('./img/section_bg03.jpg.webp')",
       },
+      keyframes: {
+        customAnimate: {
+          "100%": { opacity: 0, visibility: "hidden" },
+        },
+      },
+      animation: {
+        customAnimate: "customAnimate 1s ease-in-out forwards",
+      },
     },
   },
   plugins: [],

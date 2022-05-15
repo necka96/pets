@@ -153,3 +153,11 @@ const date = (selectElement("#date").innerText = new Date().getFullYear());
 
 // scroll animation
 AOS.init();
+
+// preloader
+
+const preloader = selectElement("#preloader");
+
+window.addEventListener("load", () => {
+  preloader.classList.add("animate-customAnimate");
+});
