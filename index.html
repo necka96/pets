@@ -240,18 +240,19 @@
               class="fixed scale-0 opacity-0 left-0 top-0 z-50 w-full h-screen transition-all"
               id="video"
             >
-              <iframe
-                class="w-full lg:max-w-[1000px] m-auto translate-y-2/4 object-cover h-1/2"
-                src="https://www.youtube.com/embed/2vRsEC65NTA"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                id="frame"
-              ></iframe>
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/2vRsEC65NTA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  id="frame"
+                ></iframe>
+              </div>
               <div
                 id="close-video"
-                class="absolute top-20 right-6 text-3xl cursor-pointer"
+                class="fixed -top-10 right-0 md:-top-8 md:-right-8 text-3xl cursor-pointer"
               >
                 <i class="fa-solid fa-xmark"></i>
               </div>
